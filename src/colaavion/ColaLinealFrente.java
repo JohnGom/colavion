@@ -43,7 +43,7 @@ public class ColaLinealFrente {
 			fin++;
 			listaCola[fin] = elemento;
 		}else
-			throw new Exception("Overflow en la cola");
+			throw new Exception("cola llena");
 	}
 	
 	public Object quitar() throws Exception{
@@ -53,7 +53,7 @@ public class ColaLinealFrente {
 			//frente++;
 			return dato;
 		}else
-			throw new Exception("Cola vacia ");
+			throw new Exception(" Cola vacia ");
 	}
 		
 	//vacía la cola
@@ -79,7 +79,9 @@ public class ColaLinealFrente {
 				System.out.println(object);			
 			}
 		}else{
-			System.out.println("La cola se encuentra vacia...");
+                        System.out.println("....................................");
+			System.out.println("   La cola se encuentra vacia...");
+                        System.out.println("....................................");
 		}
 	}
 	
